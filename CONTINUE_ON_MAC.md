@@ -127,6 +127,21 @@ After the ordinary-app UI passes, present an exact reversible plan for an experi
 redirect. Keep com.amazon.tv.launcher installed and enabled. Do not enable an accessibility watcher until its
 permissions, source revision, physical-remote tests and complete removal steps have been shown and approved.
 
+CURRENT DEVICE CONNECTION
+- Fire TV IP: 192.168.1.109
+- ADB endpoint: 192.168.1.109:5555
+- ADB debugging is enabled
+- This Mac may require a new “Allow USB debugging?” confirmation on the TV
+- Verify the IP in Settings > My Fire TV > About > Network before connecting because DHCP may change it
+- Device: Fire TV Stick 4K Max, 1st generation
+- Reported model: AFTKA
+- Device codename: kara
+- Fire OS: 7.7.1.3
+- Build: PS7713.5443N
+- Android: 9 / API 28
+- Fire TV Home: com.amazon.tv.launcher/.ui.HomeActivity_vNext
+- The OTG hub has an Ethernet adapter, but the previous Android network inspection showed the active connection as Wi-Fi/wlan0
+
 Also continue the Skyglass diagnosis by distinguishing full reboot from sleep/wake resume; do not disable its
 generic WorkManager receiver without evidence. At completion, provide build/install/restore documentation and
 close ADB port 5555 after debugging is turned off.
