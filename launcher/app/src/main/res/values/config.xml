@@ -17,10 +17,12 @@
 
     <!-- Apps pinned to the dock row at the bottom, in this order. Missing apps are skipped. -->
     <string-array name="dock_apps">
-        <item>com.netflix.ninja</item>
-        <item>com.amazon.amazonvideo.livingroom</item>
-        <item>com.google.android.youtube.tv</item>
-        <item>in.startv.hotstar</item>
+        <item>com.equiptv.xciptvskyglas</item>
+        <item>com.movieboxpro.androidtv</item>
+        <item>com.stremio.one</item>
+        <item>com.amazon.firetv.youtube</item>
+        <item>com.amazon.firebat</item>
+        <item>com.rblive.app</item>
     </string-array>
     <!-- With fewer dock_apps than columns (or a dock app that is not installed), the free dock slots take
          the first grid apps, so the dock never shows a gap. false leaves them empty (#162); a theme can
@@ -255,7 +257,7 @@
     <string name="locale" translatable="false"></string>
 
     <!-- A name after the greeting: "Mr. Trịnh" shows GOOD MORNING, MR. TRỊNH. Empty: the greeting alone. -->
-    <string name="greeting_name" translatable="false"></string>
+    <string name="greeting_name" translatable="false">Ramesh &amp; Aasma</string>
     <!-- The greeting above the clock ("Good evening"). false hides it. Can also be set with "show_greeting" in a theme. -->
     <bool name="show_greeting">true</bool>
     <!-- The date and the line between the clock and the date in the clock's full white instead of dimmed. Can also be
@@ -264,7 +266,7 @@
     <!-- Optional VPN app the network pill opens (hold the pill for Wi-Fi settings), e.g. the package of the
          VPN you use. Empty: the pill opens Wi-Fi settings. The green VPN badge shows for any VPN either way;
          with an app set here, a red "VPN off" badge also shows while no VPN is up. -->
-    <string name="vpn_app" translatable="false"></string>
+    <string name="vpn_app" translatable="false">com.nordvpn.android</string>
     <!-- The VPN as its own pill after the network pill, instead of a badge inside it: solid green with a lock while a
          VPN is up, solid red "VPN off" while none is and vpn_app is installed. Pressing it opens vpn_app (without it,
          the App library, or VPN settings when app_library is off), and the network pill then always opens Wi-Fi
@@ -272,7 +274,7 @@
          label with icon_only_buttons, since the red state has no icon. A VPN app's kill switch keeps a VPN up while
          the app says disconnected (it holds the tunnel to block traffic), so the pill stays green then. Can also be
          set with "vpn_pill" in a theme. -->
-    <bool name="vpn_pill">false</bool>
+    <bool name="vpn_pill">true</bool>
     <!-- The dock as its own row: a lighter band, no names under the tiles, parked low on the screen with the top
          shelf above it. false makes the dock apps simply the first tiles of one plain grid (still in dock_apps
          order, no empty slots), with names under every tile and the glow behind every focused tile. -->
@@ -321,7 +323,7 @@
          of white for both. Can also be set with "wifi_status_warnings": true in a theme's config.json. -->
     <bool name="wifi_status_warnings">false</bool>
     <!-- The app library as a round button in the top bar, beside Settings (app_library must be on too). -->
-    <bool name="library_button">false</bool>
+    <bool name="library_button">true</bool>
     <!-- The App library pill after the last Home row. false hides it while library_button is on, so the top-bar
          button stays the way in, and Down from the last row stays put as with app_library off. Can also be set
          with "show_library_pill": false in a theme's config.json. -->
@@ -339,7 +341,7 @@
     </string-array>
     <!-- The Inputs pill in the top bar, shown when the TV has inputs to list. false hides it for good; what the
          remote's Input button does is unchanged. Can also be set with "show_inputs_pill" in a theme. -->
-    <bool name="show_inputs_pill">true</bool>
+    <bool name="show_inputs_pill">false</bool>
     <!-- The Inputs list shows only HDMI ports and CEC devices that report connected. Empty ports, devices asleep in
          standby (some TVs, TCL among them, report an empty HDMI port as connected-standby, the same state a
          sleeping device has) and the AV jacks fold behind a "More inputs" row that expands the rest. An HDMI row
@@ -378,7 +380,7 @@
 
     <!-- Tiles per row in the grid; the dock always has this many slots. Tiles are 180dp wide at 4 columns and
          shrink to fit from 5 up (about 144dp at 5, 117dp at 6 on a 1080p TV). -->
-    <integer name="columns">4</integer>
+    <integer name="columns">6</integer>
 
     <!-- Basic motion is on; advanced effects are opt-in in the launcher's own Settings screen. -->
     <bool name="animations">true</bool>
@@ -389,7 +391,7 @@
     <bool name="show_home_settings_shortcut">false</bool>
 
     <!-- Installed launchable apps, including ordinary Android apps. Also settable in config.json. -->
-    <bool name="app_library">false</bool>
+    <bool name="app_library">true</bool>
     <!-- Every app tile is its icon on a card tinted from that icon, name only under the focused tile,
          instead of each app's own banner. Off by default; a theme can set "uniform_tiles": true. -->
     <bool name="uniform_tiles">false</bool>
@@ -453,8 +455,8 @@
     <!-- Where the TV is, in decimal degrees, so the sky's sunrise and sunset glows follow the real sun
          (computed on the TV, no network). Empty: a fixed temperate day, sunset glow around 19:00.
          Vilnius: 54.69 and 25.28. -->
-    <string name="latitude" translatable="false"></string>
-    <string name="longitude" translatable="false"></string>
+    <string name="latitude" translatable="false">-32.02038</string>
+    <string name="longitude" translatable="false">115.91183</string>
 
     <!-- Cinematic top shelf: the focused dock app's artwork, softened, fills the top of the screen in its
          colour; the shelf gets a larger name, a "Last opened" line (from the apps Home opened) and dock position

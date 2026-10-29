@@ -1,0 +1,27 @@
+# AFTKA / kara, Fire OS 7.7.1.3 — packages disabled and reboot-verified in this session.
+# Reversible only: pm disable-user --user 0. Never uninstall.
+
+# Telemetry, metrics, logging, ACR, advertising and shopping promos
+com.amazon.kso.blackbird
+com.amazon.client.metrics.api
+com.amazon.tv.fw.metrics
+com.amazon.wirelessmetrics.service
+com.amazon.perfcollection
+com.amazon.perfc
+com.amazon.dp.logger
+com.amazon.ceviche
+com.amazon.tv.developer.dataservice
+com.amazon.tv.acr
+com.amazon.sneakpeek
+com.amazon.hybridadidservice
+com.amazon.tv.easyupgrade
+com.amazon.shoptv.client
+com.amazon.shoptv.firetv.client
+
+# Unused Fire TV content surfaces
+com.amazon.hedwig
+com.amazon.tv.livetv
+com.amazon.franktvinput
+com.amazon.gamehub
+com.amazon.tv.releasenotes
+
